@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+.div-box {
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid #cfcfcf;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px #CFCFCF;
+}
+
+a:hover {
+  cursor: pointer;
+}

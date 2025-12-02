@@ -9,3 +9,9 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes)
   ]
 };
+
+export const APP_CONFIG = {
+  endpoints: {
+    movieApi: 'https://challenge.outsera.tech/api/movies'
+  }
+}
