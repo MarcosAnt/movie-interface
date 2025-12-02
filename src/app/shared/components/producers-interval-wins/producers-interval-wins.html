@@ -1,0 +1,56 @@
+<div class="div-box">
+  <h4>Producers with longest and shortest interval between wins</h4>
+  @if (producers().min.length === 0 && producers().max.length === 0) {
+    <p>No intervals found.</p>
+  }
+  @else {
+    <div class="mt-2">
+      <p class="mb-0">Maximum</p>
+      <table class="table table-striped table-hover table-bordered">
+        <thead class="table-light">
+          <tr>
+            <th scope="col">Producer</th>
+            <th scope="col">Interval</th>
+            <th scope="col">Previous Year</th>
+            <th scope="col">Following Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr></tr>
+          @for (producer of producers().min; track producer) {
+            <tr>
+              <td>{{ producer.producer }}</td>
+              <td>{{ producer.interval }}</td>
+              <td>{{ producer.previousWin }}</td>
+              <td>{{ producer.followingWin }}</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+    <div class="mt-2">
+      <p class="mb-0">Maximum</p>
+      <table class="table table-striped table-hover table-bordered">
+        <thead class="table-light">
+          <tr>
+            <th scope="col">Producer</th>
+            <th scope="col">Interval</th>
+            <th scope="col">Previous Year</th>
+            <th scope="col">Following Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr></tr>
+          @for (producer of producers().max; track producer) {
+            <tr>
+              <td>{{ producer.producer }}</td>
+              <td>{{ producer.interval }}</td>
+              <td>{{ producer.previousWin }}</td>
+              <td>{{ producer.followingWin }}</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  }
+</div>

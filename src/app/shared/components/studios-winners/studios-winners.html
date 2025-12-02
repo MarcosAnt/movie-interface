@@ -1,0 +1,25 @@
+<div class="div-box">
+  <h4>Top 3 studios with winners</h4>
+  @if (listStudios().studios.length === 0) {
+    <p>No studios found.</p>
+  }
+  @else {
+    <table class="table table-striped table-hover table-bordered">
+      <thead class="table-light">
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Win Count</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr></tr>
+        @for (studio of listStudios().studios; track studio) {
+          <tr>
+            <td>{{ studio.name }}</td>
+            <td>{{ studio.winCount }}</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  }
+</div>
