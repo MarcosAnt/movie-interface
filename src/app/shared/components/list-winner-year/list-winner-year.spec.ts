@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ListMovieYear } from './list-movie-year';
+import { ListWinnerYear } from './list-winner-year';
 
-describe('ListMovieYear', () => {
-  let component: ListMovieYear;
-  let fixture: ComponentFixture<ListMovieYear>;
+describe('ListWinnerYear', () => {
+  let component: ListWinnerYear;
+  let fixture: ComponentFixture<ListWinnerYear>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ListMovieYear]
+      imports: [ListWinnerYear]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ListMovieYear);
+    fixture = TestBed.createComponent(ListWinnerYear);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });
