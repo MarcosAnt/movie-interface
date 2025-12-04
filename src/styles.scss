@@ -9,3 +9,8 @@
 a:hover {
   cursor: pointer;
 }
+
+.custom-fixed-table {
+  table-layout: fixed; /* Isso fará com que todas as colunas tenham a mesma largura */
+  width: 100%; /* Garante que a tabela ocupe toda a largura disponível do seu container */
+}

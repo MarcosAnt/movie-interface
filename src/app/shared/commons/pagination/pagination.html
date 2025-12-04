@@ -1,0 +1,51 @@
+<div class="d-flex justify-content-center">
+  <nav aria-label="Movie list pagination">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link"
+          href="#"
+          aria-label="To first page"
+          [class.disabled]="currentPage() === 0"
+          (click)="onPageClick($event, 0)">
+          <i class="bi bi-chevron-double-left"></i>
+        </a>
+      </li>
+      <li class="page-item">
+        <a class="page-link"
+          href="#"
+          aria-label="Previous"
+          [class.disabled]="currentPage() === 0"
+          (click)="onPageClick($event, currentPage() - 1)">
+          <i class="bi bi-chevron-left"></i>
+        </a>
+      </li>
+      @for (page of pages(); track page) {
+        <li class="page-item">
+          <a href="#"
+            [class.active]="page === currentPage()"
+            class="page-link"
+            (click)="onPageClick($event, page)"
+            >{{ page + 1 }}</a>
+        </li>
+      }
+      <li class="page-item">
+        <a class="page-link"
+          href="#"
+          aria-label="Next"
+          [class.disabled]="currentPage() === pages().length - 1"
+          (click)="onPageClick($event, currentPage() + 1)">
+          <i class="bi bi-chevron-right"></i>
+        </a>
+      </li>
+      <li class="page-item">
+        <a class="page-link"
+          href="#"
+          aria-label="Next"
+          [class.disabled]="currentPage() === pages().length - 1"
+          (click)="onPageClick($event, pages().length - 1)">
+          <i class="bi bi-chevron-double-right"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
