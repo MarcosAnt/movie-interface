@@ -1,9 +1,9 @@
-interface ProducersWinIntervalResponse {
+export interface ProducersWinIntervalResponse {
   min: Winner[];
   max: Winner[];
 }
 
-interface Winner {
+export interface Winner {
   producer: string;
   interval: number;
   previousWin: number;

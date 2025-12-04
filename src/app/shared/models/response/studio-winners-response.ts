@@ -1,5 +1,5 @@
 export interface StudioWinnersResponse {
-  name: number;
+  name: string;
   winCount: number;
 }
 

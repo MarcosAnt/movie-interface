@@ -18,6 +18,8 @@
             <td>{{ studio.name }}</td>
             <td>{{ studio.winCount }}</td>
           </tr>
+        } @empty {
+          <p>No studios found.</p>
         }
       </tbody>
     </table>

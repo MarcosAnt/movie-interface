@@ -11,7 +11,7 @@ export class Pagination {
   currentPage = signal<number>(0);
   pageChange = output<number>();
 
-   onPageClick(event: Event, page: number) {
+  onPageClick(event: Event, page: number) {
     event.preventDefault();
     this.currentPage.set(page);
     this.pageChange.emit(page);

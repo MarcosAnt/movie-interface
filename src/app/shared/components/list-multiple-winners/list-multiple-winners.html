@@ -18,6 +18,8 @@
             <td>{{ winner.year }}</td>
             <td>{{ winner.winnerCount }}</td>
           </tr>
+        } @empty {
+          <p>No winners found.</p>
         }
       </tbody>
     </table>

@@ -3,7 +3,6 @@ import { WinnerByYearResponse } from '../../models/response/winner-by-year-respo
 import { ListMovieService } from '../../../services/list-movie.service';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { NgxMaskDirective } from 'ngx-mask';
-import { required } from '@angular/forms/signals';
 
 @Component({
   selector: 'app-list-winner-year',

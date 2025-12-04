@@ -1,5 +1,6 @@
 import { Component, OnInit, signal } from '@angular/core';
 import { ProducersWinIntervalService } from '../../../services/producers-win-interval.service';
+import { ProducersWinIntervalResponse } from '../../models/response/producers-win-interval-response';
 
 @Component({
   selector: 'app-producers-interval-wins',
@@ -13,7 +14,7 @@ export class ProducersIntervalWins  implements OnInit {
   constructor(private producersWinIntervalService: ProducersWinIntervalService) {}
 
   ngOnInit(): void {
-    this.producersWinIntervalService.getStudioWinners().subscribe((data) => {
+    this.producersWinIntervalService.getProducersIntervals().subscribe((data) => {
       this.producers.set(data);
     });
   }
