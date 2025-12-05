@@ -1,59 +1,107 @@
-# MovieInterface
+# Movie Interface
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.0.
+Uma aplicação web para visualização de informações sobre filmes.
+Desenvolvida com objetivo de atualizar e aprimorar conhecimentos do framework Angular e desenvolvimento web.
 
-## Development server
+## 🚀 Tecnologias Utilizadas
 
-To start a local development server, run:
+### Frontend Framework
+- **Angular**: `^21.0.0`
+- **Angular CLI**: `^21.0.0`
+- **TypeScript**: `~5.9.2`
+- **RxJS**: `~7.8.0`
 
+### UI/UX
+- **Bootstrap**: `^5.3.8`
+- **Bootstrap Icons**: `^1.13.1`
+- **ngx-mask**: `^20.0.3`
+
+### Testes
+- **Vitest**: `^4.0.8`
+- **jsdom**: `^27.1.0`
+- **Jasmine Types**: `^5.1.13`
+
+### Build e Desenvolvimento
+- **Angular Build**: `^21.0.0`
+- **Node.js**: `20.19.5`
+- **npm**: `10.8.2`
+
+## 🛠️ Pré-requisitos
+
+Antes de executar o projeto, certifique-se de ter instalado:
+
+- **Node.js** (versão 18 ou superior)
+- **npm** (vem com Node.js)
+
+## 📦 Instalação e Execução Local
+
+### 1. Clone o repositório
 ```bash
+git clone https://github.com/MarcosAnt/movie-interface.git
+cd movie-interface
+```
+
+### 2. Instale as dependências
+```bash
+npm install
+```
+
+### 3. Execute o servidor de desenvolvimento
+```bash
+npm start
+# ou
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### 4. Acesse a aplicação
+Abra seu navegador e navegue até `http://localhost:4200/`
 
-## Code scaffolding
+A aplicação será recarregada automaticamente sempre que você modificar os arquivos fonte.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 🧪 Executando Testes Unitários
 
+### Executar todos os testes
 ```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
+npm test
+# ou
 ng test
 ```
 
-## Running end-to-end tests
+## 🏗️ Build para Produção
 
-For end-to-end (e2e) testing, run:
+Para gerar uma versão otimizada para produção:
 
 ```bash
-ng e2e
+npm run build
+# ou
+ng build
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Os artefatos de build serão armazenados no diretório `dist/`.
 
-## Additional Resources
+## 🔧 Scripts Disponíveis
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- `npm start` - Inicia o servidor de desenvolvimento
+- `npm run build` - Gera build de produção
+- `npm run watch` - Build em modo watch para desenvolvimento
+- `npm test` - Executa testes unitários
+
+## 📁 Estrutura do Projeto
+
+```
+src/
+├── app/
+│   ├── components/          # Componentes principais
+│   ├── shared/             # Componentes e serviços compartilhados
+│   ├── services/           # Serviços da aplicação
+│   └── app.config.ts       # Configurações da aplicação
+└── styles.scss            # Estilos globais
+```
+
+## 🌐 API
+
+A aplicação consome dados da API: `https://challenge.outsera.tech/api/movies`
+
+## 📚 Recursos Adicionais
+
+Para mais informações sobre o Angular CLI, visite a [documentação oficial](https://angular.dev/tools/cli).
